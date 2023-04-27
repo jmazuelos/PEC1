@@ -1,8 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 /*START - CSS GRID*/
 .wrapper{
   display: grid;
@@ -48,18 +43,9 @@ body::before{
 
 /*END - BODY*/
 /*START - LINK*/
-a{
-  text-decoration: none;
-}
-
 section#referentes a{color: black;}
 section#referentes a:visited{color:black;}
 section#referentes a:hover{color:  rgb(245, 157, 35);}
-
-
-a.link-menuNavegacion-header{color: black;}
-.menuNavegacion-header a:visited {color: black;}
-.menuNavegacion-header a:hover {color: rgb(245, 157, 35)} 
 
 main a{color: black;}
 main a:visited {color: black; }
@@ -73,40 +59,6 @@ footer a:hover {color: rgb(245, 157, 35); }
 .logo a:visited{color: black;}
 
 /*END - LINK*/
-/*START- LIST*/
-
-li{
-  list-style: none;
-  text-decoration: none;
-}
-/*END - LIST*/
-/*START - HEADER*/
-.headerStyle {
-  font-weight: 700;
-  background-color: white;
-  height: 60px;
-}
-
-/**/#imagenLogo{height: 100px;width: 75px;margin-top: 5px;}
-
-li.elemento-lista-menuNavegacion-header{
-  margin-left: 1.5vw;
-  font-size: 18px;
-}
-
-ul.lista-menuNavegacion-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-items: flex-start;
-}
-
-.mt{
-  margin-top: 20px;
-}
-
-/*END - HEADER*/
 /*START - MAIN*/
 main{
   margin-top: 8%;
@@ -127,82 +79,14 @@ main{
 .titulo{
   margin-bottom: 30px;
 }
-/* PEC2 */
-
-*{
-  margin: 0px;
-  padding: 0px;
-}
-
-html{
-  box-sizing: border-box;
-}
-
-a{
-  text-decoration: none;
-}
 
 a:link {color: white; } /*Da color al link*/
 a:visited {color: white; } /*Da color al link visitado. En este caso no se quiere cambiar de color*/
 a:hover {color: rgb(222, 12, 23); } /*Cuando se pasa por encima del link, cambia de color*/
 
-.listaNavegacion{
-  list-style: none;
-  text-decoration: none;
-}
-
-.linkNavegacion, .linkNavegacionActual{
-  display: inline;
-  text-decoration: none;
-}
-
-footer{
-  width: 100%;
-}
-
-footer > nav, footer > div{
-  margin-left: 20%;
-  line-height: 30px;
-}
-
-footer > nav{
-  margin-bottom: 2%;
-}
-
-/** DISEÑO INDEX **/
-
-#headerIndex > nav{
-  margin-left: 20%;
-  margin-top: 2%;
-}
-
-.logoIndex{
-  display:inline;
-}
-
-div.logoIndex{
-  font-size:600%;
-  font-weight: 700;
-  margin:0;
-}
-
-#footerIndex{
-  position: fixed; /*En este caso el contenido no supera la pantalla inferior, por tanto se realiza para que el footer permanezca en la zona inferior*/
-  bottom: 0;
-  background-color: black;
-}
-
 @media only screen and (max-width: 500px) { /*Esto ajusta el contenido de las distintas páginas web a los distintos tipos de pantalla*/
   header > nav{
       margin-left: 5%!important;
-  }
-
-  div.logoIndex{
-      font-size: 400%;
-  }
-
-  img.logoIndex{
-      width: 15%!important;
   }
 
   img.logoNoIndex{
@@ -227,3 +111,4 @@ div.logoIndex{
 .linkNavegacionActual > a{
   font-weight: bolder;
 }
+

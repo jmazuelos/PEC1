@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/*START - HEADER*/
+.headerStyle {
+    font-weight: 700;
+    background-color: rgb(245, 157, 35);
+    height: 100px;
+}
+
+a.link-menuNavegacion-header{color: black;}
+.menuNavegacion-header a:visited {color: black;}
+.menuNavegacion-header a:hover {color: white} 
+  
+/**/#imagenLogo{height: 140px;width: 110px;margin-top: 5px;}
+  
+li.elemento-lista-menuNavegacion-header{
+    margin-left: 1.5vw;
+    font-size: 23px;
+}
+  
+ul.lista-menuNavegacion-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: flex-start;
+}
+  
+.mt{
+    margin-top: 40px;
+}
+
+#headerIndex > nav{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+  
+/*END - HEADER*/
+/*START - FOOTER*/
+footer{
+    width: 100%;
+}
+  
+footer > nav, footer > div{
+    margin-left: 20%;
+    line-height: 30px;
+}
+  
+footer > nav{
+    margin-bottom: 2%;
+}
+
+  
+#footerIndex{
+    position: fixed; /*En este caso el contenido no supera la pantalla inferior, por tanto se realiza para que el footer permanezca en la zona inferior*/
+    bottom: 0;
+    background-color: black;
+}
+/*END - FOOTER*/
