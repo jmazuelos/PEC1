@@ -1,0 +1,90 @@
+/*-----------------------------------------REFERENTES.HTML------------------------------------------------------------------*/
+.container{
+    width: 95%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside a, main#mainReferentes a{color: rgb(245, 157, 35);}
+aside a:visited, main#mainReferentes a:visited {color: rgb(245, 157, 35); }
+aside a:hover, main#mainReferentes a:hover {color: rgb(93, 95, 121); } 
+
+body#bodyReferentes{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    gap: 60px;
+}
+
+@media only screen and (min-width: 850px){
+    main#mainReferentes{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "titulo titulo"
+            "aside lista";
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+}
+
+/** MAIN **/
+
+section#tituloListaReferentes{
+    grid-area: titulo;
+    text-align: center;
+}
+
+section#listaReferentes{
+    grid-area: lista;
+    color:rgb(93, 95, 121);
+}
+
+aside{
+    grid-area: aside;
+}
+
+aside>nav>ul>li{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section#tituloListaReferentes{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+section#listaReferentes{
+    margin-top: 0px;
+}
+
+.tarjetaReferentes{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 25% 25% 50%;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.tarjetaReferentes > ul.numeracion{
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.tarjetaReferentes > ul.descripcion{
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+
+
+/**/
+section#referentes a{color: rgb(93, 95, 121);}
+section#referentes a:visited{color:  rgb(93, 95, 121);}
+section#referentes a:hover{color:  rgb(245, 157, 35);} 
