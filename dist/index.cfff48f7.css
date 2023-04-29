@@ -26,26 +26,26 @@ li {
   font-weight: 700;
 }
 
-a.link-menuNavegacion-header, .menuNavegacion-header a:visited {
+header a, header a:visited {
   color: #000;
 }
 
-.menuNavegacion-header a:hover {
+header a:hover {
   color: #fff;
 }
 
-#imagenLogo {
+#logo {
   height: 140px;
-  width: 110px;
+  width: 100px;
   margin-top: 5px;
 }
 
-li.elemento-lista-menuNavegacion-header {
+.navElem {
   margin-left: 1.5vw;
   font-size: 23px;
 }
 
-ul.lista-menuNavegacion-header {
+.navList {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -56,28 +56,62 @@ ul.lista-menuNavegacion-header {
   margin-top: 40px;
 }
 
-#headerIndex > nav {
-  margin-top: 2%;
-  margin-left: 20%;
+.footerStyle {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
 }
 
-footer {
-  width: 100%;
+footer a, footer a:visited {
+  color: #fff;
 }
 
-footer > nav, footer > div {
-  margin-left: 20%;
+footer a:hover {
+  color: #f59d23;
+}
+
+#navFootersection {
   line-height: 30px;
 }
 
-footer > nav {
-  margin-bottom: 2%;
+#acceptPolicy {
+  justify-content: center;
+  font-size: small;
+  display: flex;
 }
 
-#footerIndex {
+footer > section {
+  margin-bottom: 30px;
+}
+
+#autoria {
+  font-size: small;
+  line-height: 25px;
+}
+
+.inputEmailStyle {
+  width: 40%;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
   background-color: #000;
-  position: fixed;
-  bottom: 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+.submitButtonStyle {
+  color: #fff;
+  height: 30px;
+  width: 110px;
+  background-color: #f05d50;
+  margin-top: 10px;
+}
+
+.navFooterElem {
+  margin-left: 30px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.cfff48f7.css.map */

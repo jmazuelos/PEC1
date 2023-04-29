@@ -36,38 +36,10 @@ body:before {
   inset: 0;
 }
 
-section#referentes a, section#referentes a:visited {
-  color: #000;
-}
-
-section#referentes a:hover {
-  color: #f59d23;
-}
-
-main a, main a:visited {
-  color: #000;
-}
-
-main a:hover {
-  color: #f59d23;
-}
-
-footer a, footer a:visited {
-  color: #fff;
-}
-
-footer a:hover {
-  color: #f59d23;
-}
-
-.logo a, .logo a:visited {
-  color: #000;
-}
-
 main {
   word-spacing: 4px;
   text-align: center;
-  margin-top: 8%;
+  margin: 100px 0;
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
@@ -81,15 +53,7 @@ main {
 }
 
 .titulo {
-  margin-bottom: 30px;
-}
-
-a:link, a:visited {
-  color: #fff;
-}
-
-a:hover {
-  color: #de0c17;
+  margin-bottom: 50px;
 }
 
 @media only screen and (width <= 500px) {
@@ -114,10 +78,6 @@ a:hover {
     margin-left: 3%;
     line-height: 25px !important;
   }
-}
-
-.linkNavegacionActual > a {
-  font-weight: bolder;
 }
 
 /*# sourceMappingURL=index.43753d1b.css.map */

@@ -1,19 +1,4 @@
-.container {
-  width: 95%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-aside a, main#mainReferentes a, aside a:visited, main#mainReferentes a:visited {
-  color: #f59d23;
-}
-
-aside a:hover, main#mainReferentes a:hover {
-  color: #5d5f79;
-}
-
-body#bodyReferentes {
+.wrapperCategoria {
   grid-gap: 1em;
   grid-template-columns: 1fr;
   grid-template-areas: "header"
@@ -23,8 +8,20 @@ body#bodyReferentes {
   display: grid;
 }
 
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
 @media only screen and (width >= 850px) {
-  main#mainReferentes {
+  .subgridCategoria {
     grid-gap: 1em;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "titulo titulo"
@@ -34,35 +31,51 @@ body#bodyReferentes {
   }
 }
 
-section#tituloListaReferentes {
-  text-align: center;
+#titleSection {
   grid-area: titulo;
-}
-
-section#listaReferentes {
-  color: #5d5f79;
-  grid-area: lista;
 }
 
 aside {
   grid-area: aside;
 }
 
-aside > nav > ul > li {
+#listSection {
+  grid-area: lista;
+}
+
+.container {
+  width: 95%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main a, main a:visited {
+  color: #f59d23;
+}
+
+main a:hover {
+  color: #5d5f79;
+}
+
+.navAsideElem {
   margin-bottom: 20px;
+  font-size: 20px;
   font-weight: 700;
 }
 
-section#tituloListaReferentes {
+#titleSection {
+  text-align: center;
   margin-left: 40px;
   font-size: 30px;
 }
 
-section#listaReferentes {
+#listSection {
+  color: #5d5f79;
   margin-top: 0;
 }
 
-.tarjetaReferentes {
+.card {
   grid-template-columns: 25% 25% 50%;
   align-items: center;
   gap: 2%;
@@ -70,22 +83,23 @@ section#listaReferentes {
   display: grid;
 }
 
-.tarjetaReferentes > ul.numeracion {
+.cardTitle {
+  font-size: 20px;
   font-weight: bold;
-  line-height: 25px;
 }
 
-.tarjetaReferentes > ul.descripcion {
+.cardDescription {
+  text-align: justify;
   margin-top: 30px;
   line-height: 25px;
 }
 
-section#referentes a, section#referentes a:visited {
-  color: #5d5f79;
+img {
+  max-width: 100%;
 }
 
-section#referentes a:hover {
-  color: #f59d23;
+.ml {
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=categoria.5e7f9342.css.map */

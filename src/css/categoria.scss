@@ -1,16 +1,5 @@
-/*-----------------------------------------REFERENTES.HTML------------------------------------------------------------------*/
-.container{
-    width: 95%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-aside a, main#mainReferentes a{color: rgb(245, 157, 35);}
-aside a:visited, main#mainReferentes a:visited {color: rgb(245, 157, 35); }
-aside a:hover, main#mainReferentes a:hover {color: rgb(93, 95, 121); } 
-
-body#bodyReferentes{
+/*START - CSS GRID*/
+.wrapperCategoria{
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 1fr;
@@ -21,8 +10,23 @@ body#bodyReferentes{
     gap: 60px;
 }
 
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*END - CSS GRID*/
+
+/*START - CSS SUBGRID*/
 @media only screen and (min-width: 850px){
-    main#mainReferentes{
+    .subgridCategoria{
         display: grid;
         grid-gap: 1em;
         grid-template-columns: 1fr 4fr;
@@ -34,37 +38,50 @@ body#bodyReferentes{
     }
 }
 
-/** MAIN **/
-
-section#tituloListaReferentes{
+#titleSection{
     grid-area: titulo;
-    text-align: center;
-}
-
-section#listaReferentes{
-    grid-area: lista;
-    color:rgb(93, 95, 121);
 }
 
 aside{
     grid-area: aside;
 }
 
-aside>nav>ul>li{
+#listSection{
+    grid-area: lista;
+}
+
+/*END - CSS SUBGRID*/
+
+/*START - MAIN*/
+.container{
+    width: 95%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main a{color: rgb(245, 157, 35);}
+main a:visited {color: rgb(245, 157, 35); }
+main a:hover {color: rgb(93, 95, 121); } 
+
+.navAsideElem{
     margin-bottom: 20px;
     font-weight: 700;
+    font-size: 20px;
 }
 
-section#tituloListaReferentes{
+#titleSection{
     margin-left: 40px;
     font-size: 30px;
+    text-align: center;
 }
 
-section#listaReferentes{
+#listSection{
     margin-top: 0px;
+    color:rgb(93, 95, 121);
 }
 
-.tarjetaReferentes{
+.card{
     display: grid;
     gap: 2%;
     grid-template-columns: 25% 25% 50%;
@@ -72,19 +89,23 @@ section#listaReferentes{
     align-items: center;
 }
 
-.tarjetaReferentes > ul.numeracion{
-    line-height: 25px;
+.cardTitle{
     font-weight: bold;
+    font-size: 20px;
 }
 
-.tarjetaReferentes > ul.descripcion{
+.cardDescription{
     line-height: 25px;
     margin-top: 30px;
+    text-align: justify;
 }
 
+img{
+    max-width: 100%;
+}
 
+.ml{
+    margin-left: 40px;
+}
 
-/**/
-section#referentes a{color: rgb(93, 95, 121);}
-section#referentes a:visited{color:  rgb(93, 95, 121);}
-section#referentes a:hover{color:  rgb(245, 157, 35);} 
+/*END - MAIN*/

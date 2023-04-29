@@ -21,7 +21,6 @@ footer {
 
 /*END - CSS GRID*/
 /*START - BODY*/
-
 body{
   font-family: 'Work Sans', sans-serif;
   background-image: url(/src/img/portada.jpg);
@@ -42,26 +41,10 @@ body::before{
 }
 
 /*END - BODY*/
-/*START - LINK*/
-section#referentes a{color: black;}
-section#referentes a:visited{color:black;}
-section#referentes a:hover{color:  rgb(245, 157, 35);}
 
-main a{color: black;}
-main a:visited {color: black; }
-main a:hover {color: rgb(245, 157, 35); } 
-
-footer a{color: white;}
-footer a:visited {color: white}
-footer a:hover {color: rgb(245, 157, 35); } 
-
-.logo a{color: black;}
-.logo a:visited{color: black;}
-
-/*END - LINK*/
 /*START - MAIN*/
 main{
-  margin-top: 8%;
+  margin: 100px 0;
   font-weight: 600;
   font-size: 40px;
   line-height: 50px;
@@ -77,14 +60,10 @@ main{
 }
 
 .titulo{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-a:link {color: white; } /*Da color al link*/
-a:visited {color: white; } /*Da color al link visitado. En este caso no se quiere cambiar de color*/
-a:hover {color: rgb(222, 12, 23); } /*Cuando se pasa por encima del link, cambia de color*/
-
-@media only screen and (max-width: 500px) { /*Esto ajusta el contenido de las distintas páginas web a los distintos tipos de pantalla*/
+@media only screen and (max-width: 500px) { 
   header > nav{
       margin-left: 5%!important;
   }
@@ -108,7 +87,4 @@ a:hover {color: rgb(222, 12, 23); } /*Cuando se pasa por encima del link, cambia
   }
 }
 
-.linkNavegacionActual > a{
-  font-weight: bolder;
-}
 

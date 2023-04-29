@@ -12,40 +12,56 @@
     <link rel="stylesheet" href="css/base.scss">
 </head>
 <body class="wrapper">
-    <!-- Se añade un header donde se encuentra el navegador con los links de las otras páginas web  -->
     <!---------------------- HEADER ----------------------------->
     <header class="headerStyle">
-        <section class="menuNavegacion">
-            <nav class="menuNavegacion-header">
-                <ul class="lista-menuNavegacion-header">
-                    <li class="elemento-lista-menuNavegacion-header mt"><a class="link-menuNavegacion-header" href="categoria.html">Categoría</a></li>
-                    <li class="elemento-lista-menuNavegacion-header mt"><a class="link-menuNavegacion-header" href="">Detalle</a></li>
-                    <li><a href="index.html"><img id="imagenLogo" src="/src/img/escudo.jpg" alt=""></a></li>
-                    <li class="elemento-lista-menuNavegacion-header mt"><a class="link-menuNavegacion-header" href="">Presentación</a></li>
-                    <li class="elemento-lista-menuNavegacion-header mt"><a class="link-menuNavegacion-header" href="">Enlaces</a></li>
+        <section id="navSection">
+            <nav class="navStyle">
+                <ul class="navList">
+                    <li class="navElem mt"><a class="navLink" href="index.html">Inicio</a></li>
+                    <li class="navElem mt"><a class="navLink" href="categoria.html">Categoría</a></li>
+                    <li><a href="index.html"><img id="logo" src="/src/img/escudo.jpg" alt=""></a></li>
+                    <li class="navElem mt"><a class="navLink" href="">Presentación</a></li>
+                    <li class="navElem mt"><a class="navLink" href="">Enlaces</a></li>
                 </ul>
             </nav>
         </section>
     </header>
-    <!-- En el main se estructura el logo -->
-    <main class="container" id="mainIndex">
+    <!-------------- MAIN --------------->
+    <main class="container">
         <div>
             <h1 class="titulo">Osuna</h1>
-            <p>Un lugar con un inmenso legado de la época romana, su esplendor renacentista y barroco, origen de productos gastronómicos premiados internacionalmente...</p>
+            <p>Un lugar con un inmenso legado de la hispania romana, su esplendor renacentista y barroco, origen de productos gastronómicos premiados internacionalmente...</p>
         </div>
     </main>
-    <!-- Se añade un footer con el nombre del autor, fecha y un navegador con los links de Aviso legal, Política de provacidad... -->
-    <footer id="footerIndex">
-        <div>
-            <p>2022 @ José Mazuelos Arregui</p>
-        </div>
-        <nav id="navegadorPie">
-            <ul class="listaNavegacion">
-                <li class="linkNavegacion"><a href="">Aviso legal</a> ∙</li>
-                <li class="linkNavegacion"><a href="">Política de privacidad</a> ∙</li>
-                <li class="linkNavegacion"><a href="">Política de cookies</a></li>
-            </ul>
-        </nav>
+    <!--------------- FOOTER -------------------->
+    <footer class="footerStyle">
+        <section>
+            <form action="">
+                <div>Recibe información semanal de las excursiones culturales</div>
+                <div id="inputEmail">
+                    <input class="inputEmailStyle" type="text" name="inputEmail" value="" placeholder="Escribe tu e-mail">
+                </div>
+                <div id="acceptPolicy">
+                    <input type="checkbox" name="acceptPolicy" value="accept"><p><a href=""> Acepto la política de protección de datos</a></p>
+                </div>
+                <div id="submitButton">
+                    <input class="submitButtonStyle" type="button" name="submitButton" value="SUSCRÍBEME">
+                </div>
+            </form>
+        </section>
+        <section id="navFooterSection">
+            <nav class="navFooterStyle">
+                <ul class="navFooterList">
+                    <li class="navFooterElem"><a class="navFooterLink" href="">Enlace de ejemplo 1</a></li>
+                    <li class="navFooterElem"><a class="navFooterLink" href="">Enlace de ejemplo 2</a></li>
+                    <li class="navFooterElem"><a class="navFooterLink" href="">Enlace de ejemplo 3</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="autoria">
+            <p>2023 © Osuna</p> 
+            <p>Actividad realizada por José Mazuelos Arregui</p> 
+        </section>
     </footer>
 </body>
 </html>

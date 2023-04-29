@@ -27,18 +27,18 @@ li{
     height: 100px;
 }
 
-a.link-menuNavegacion-header{color: black;}
-.menuNavegacion-header a:visited {color: black;}
-.menuNavegacion-header a:hover {color: white} 
+header a{color: black;}
+header a:visited {color: black;}
+header a:hover {color: white} 
   
-/**/#imagenLogo{height: 140px;width: 110px;margin-top: 5px;}
+#logo{height: 140px;width: 100px;margin-top: 5px;}
   
-li.elemento-lista-menuNavegacion-header{
+.navElem{
     margin-left: 1.5vw;
     font-size: 23px;
 }
   
-ul.lista-menuNavegacion-header{
+.navList{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -49,31 +49,60 @@ ul.lista-menuNavegacion-header{
 .mt{
     margin-top: 40px;
 }
-
-#headerIndex > nav{
-    margin-left: 20%;
-    margin-top: 2%;
-}
   
 /*END - HEADER*/
 /*START - FOOTER*/
-footer{
-    width: 100%;
-}
-  
-footer > nav, footer > div{
-    margin-left: 20%;
-    line-height: 30px;
-}
-  
-footer > nav{
-    margin-bottom: 2%;
+.footerStyle {
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
-  
-#footerIndex{
-    position: fixed; /*En este caso el contenido no supera la pantalla inferior, por tanto se realiza para que el footer permanezca en la zona inferior*/
-    bottom: 0;
+footer a{color: white;}
+footer a:visited {color: white}
+footer a:hover {color: rgb(245, 157, 35); } 
+
+#navFootersection{
+    line-height: 30px;
+}
+
+#acceptPolicy{
+    display: flex; 
+    justify-content: center; 
+    font-size: small;  
+}
+
+footer>section{
+    margin-bottom: 30px;
+}
+
+#autoria{
+    font-size: small;
+    line-height: 25px;
+}
+
+.inputEmailStyle{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
     background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.submitButtonStyle{
+    background-color: rgb(240, 93, 80);
+    color: white;
+    height: 30px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.navFooterElem{
+    display: inline-block;
+    margin-left: 30px;
 }
 /*END - FOOTER*/
