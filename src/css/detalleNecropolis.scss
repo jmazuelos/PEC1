@@ -30,13 +30,13 @@ footer {
     max-width: 1140px; 
     margin-left: auto; 
     margin-right: auto;
+    text-align: center;
 }
 
 .title{
     font-size: 40px;
     margin-bottom: 15px;
     text-align: center;
-    margin-left: -50px;
 }
 
 .subtitle{
@@ -45,15 +45,13 @@ footer {
 }
 
 #articleContent p{
-    margin-bottom: 20px;
+    margin: 30px 0;
     color:rgb(93, 95, 121);
     text-align: justify;
 }
 
 figure{
-    text-align: left;
     color: rgb(93, 95, 121);
-    margin-left: 15%;
 }
 
 iframe{
@@ -66,3 +64,13 @@ figcaption{
 
 /*END - MAIN*/
 
+@media only screen and (max-width: 600px){
+    /*START - MAIN*/
+    .wrapperDetalle{
+        gap: 30px;
+    }
+
+    .containerDetalle{
+        width: 90%; 
+    }
+}

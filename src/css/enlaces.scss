@@ -1,0 +1,96 @@
+/*START - CSS GRID*/
+.wrapperEnlaces{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    gap: 60px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+  
+/*END - CSS GRID*/
+
+/*START - MAIN*/
+.containerEnlaces{
+    width: 60%; 
+    max-width: 1140px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.title{
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.linkListTitle{
+    line-height: 50px;
+}
+
+.linkList{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    color:rgb(93, 95, 121);
+}
+
+.linkListTitle{
+    font-size: 20px;
+    font-weight: 700;
+    list-style-image: url("/src/img/vinieta.jpg");
+    list-style-position: outside;
+}
+
+.linkListElem{
+    font-size: medium;
+    font-weight: 400;
+    list-style: none;
+    line-height: 25px;
+}
+
+.listStyle{
+    list-style-type: square;
+}
+
+.linkListElem:not(:first-of-type){
+    margin-top: 20px;
+}
+
+main a{color: rgb(245, 157, 35);}
+main a:visited {color: rgb(245, 157, 35);}
+main a:hover {color: rgb(93, 95, 121); } 
+
+/*END - MAIN*/
+
+@media only screen and (max-width: 600px){
+    /*START - MAIN*/
+    .wrapperEnlaces{
+        gap: 30px;
+    }
+
+    .containerEnlaces{
+        width: 80%; 
+    }
+
+    .linkListTitle{
+        font-size: 18px;
+    }
+
+    .linkListElem{
+        font-size: 13px;
+    }
+}

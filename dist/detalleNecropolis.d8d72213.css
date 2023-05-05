@@ -23,6 +23,7 @@ footer {
 .containerDetalle {
   width: 60%;
   max-width: 1140px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,7 +31,6 @@ footer {
 .title {
   text-align: center;
   margin-bottom: 15px;
-  margin-left: -50px;
   font-size: 40px;
 }
 
@@ -42,13 +42,11 @@ footer {
 #articleContent p {
   color: #5d5f79;
   text-align: justify;
-  margin-bottom: 20px;
+  margin: 30px 0;
 }
 
 figure {
-  text-align: left;
   color: #5d5f79;
-  margin-left: 15%;
 }
 
 iframe {
@@ -57,6 +55,16 @@ iframe {
 
 figcaption {
   font-size: small;
+}
+
+@media only screen and (width <= 600px) {
+  .wrapperDetalle {
+    gap: 30px;
+  }
+
+  .containerDetalle {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=detalleNecropolis.d8d72213.css.map */

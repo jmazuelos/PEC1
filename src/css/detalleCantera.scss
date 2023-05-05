@@ -1,0 +1,76 @@
+/*START - CSS GRID*/
+.wrapperDetalle{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    gap: 60px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*END - CSS GRID*/
+
+/*START - MAIN*/
+.containerDetalle{
+    width: 60%; 
+    max-width: 1140px; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subtitle{
+    margin: 20px 0;
+    text-align: center;
+}
+
+#articleContent p{
+    margin-bottom: 20px;
+    color:rgb(93, 95, 121);
+    text-align: justify;
+}
+
+figure{
+    color: rgb(93, 95, 121);
+}
+
+iframe{
+    max-width: 100%;
+}
+
+figcaption{
+    font-size: small;
+}
+
+/*END - MAIN*/
+
+@media only screen and (max-width: 600px){
+    /*START - MAIN*/
+    .wrapperDetalle{
+        gap: 30px;
+    }
+
+    .containerDetalle{
+        width: 90%; 
+    }
+}

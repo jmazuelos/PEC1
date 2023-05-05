@@ -56,27 +56,10 @@ main {
   margin-bottom: 50px;
 }
 
-@media only screen and (width <= 500px) {
-  header > nav {
-    margin-left: 5% !important;
-  }
-
-  img.logoNoIndex {
-    min-width: 20px !important;
-  }
-
-  main > img, main > div {
-    margin-left: 5%;
-  }
-
-  footer > nav, footer > div {
-    margin-left: 5%;
-    line-height: 30px;
-  }
-
-  form > div > p {
-    margin-left: 3%;
-    line-height: 25px !important;
+@media only screen and (width <= 450px) {
+  main {
+    margin: 50px 0;
+    font-size: 9vw;
   }
 }
 
