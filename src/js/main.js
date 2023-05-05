@@ -1,5 +1,5 @@
-$( window ).on( "load", function() {
-    document.querySelector(".menu").style.display = 'none';
+$(document).ready(function() {
+    sideMenu.style.display = 'none';
 } )
 
 const sideMenu = document.querySelector(".menu");
