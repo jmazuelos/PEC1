@@ -40,7 +40,7 @@ footer {
   position: relative;
 }
 
-span {
+span:not(.material-symbols-outlined) {
   z-index: 2;
   background-color: #fff;
   padding: 0 20px;

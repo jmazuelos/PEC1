@@ -8,16 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/detalleNecropolis.scss">
+    <link rel="stylesheet" href="css/detalle.scss">
     <link rel="stylesheet" href="css/base.scss">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body class="wrapperDetalle">
     <!---------------------- HEADER ----------------------------->
     <header class="headerStyle">
+        <div class="containerMenu">
+            <aside class="menu">
+                <div class="top">
+                    <div class="logoClose">
+                        <div class="close" id="closeBtn"><span class="material-symbols-outlined">close</span></div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="categoria.html">
+                        <h3>Categoría</h3>
+                    </a>
+                    <a href="presentacion.html">
+                        <h3>Presentación</h3>
+                    </a>
+                    <a href="enlaces.html">
+                        <h3>Enlaces</h3>
+                    </a>
+                </div>
+            </aside>
+        </div>
         <section id="navSection">
             <nav class="navStyle">
                 <ul class="navList">
-                    <li class="navElem mt"><a class="navLink" href="index.html">Inicio</a></li>
+                    <li class="navElem mt">
+                        <div class="top">
+                            <button id="menuBtn">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </li>
                     <li class="navElem mt"><a class="navLink" href="categoria.html">Categoría</a></li>
                     <li><a href="index.html"><img id="logo" src="/src/img/escudo.jpg" alt=""></a></li>
                     <li class="navElem mt"><a class="navLink" href="presentacion.html">Presentación</a></li>
@@ -44,7 +78,21 @@
             </section>
             <section id="">
                 <h2 class="subtitle">Otros lugares de interés</h1>
-            </section>
+                </section>
+                <section id="galeria">
+                    <div class="lugar">
+                        <figure class="foto">
+                            <img src="/src/img/colegiata.jpg" alt="">
+                            <a href="detalleColegiata.html"><figcaption>La Colegiata</figcaption></a>
+                        </figure>
+                    </div>
+                    <div class="lugar">
+                        <figure class="foto">
+                            <img src="/src/img/canteras.jpg" alt="">
+                            <a href="detalleCantera.html"><figcaption>Canteras de Osuna</figcaption></a>
+                        </figure>
+                    </div>
+                </section>
         </article>
     </main>
     <!---------------------- FOOTER ----------------------------->
@@ -80,5 +128,7 @@
             <p>Actividad realizada por José Mazuelos Arregui</p> 
         </section>
     </footer>
+
+    <script src="/src/js/main.js"></script>
 </body>
 </html>

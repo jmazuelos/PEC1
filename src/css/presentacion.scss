@@ -45,7 +45,7 @@ footer {
     position: relative;
 }
 
-span{
+span:not(.material-symbols-outlined){
     background-color: white;
     position: relative;
     z-index: 2;

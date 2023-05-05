@@ -112,7 +112,7 @@ footer>section{
 }
 /*END - FOOTER*/
 
-/*-----------------------------------------PORTADA (MOBILE, TABLET)------------------------------------------------------------------*/
+/*-----------------------------------------BASE (MOBILE, TABLET)------------------------------------------------------------------*/
 
 @media only screen and (max-width: 850px){
     /*START - MAIN*/
@@ -155,4 +155,53 @@ footer>section{
         font-size: 13px;
     }
     #logo{height: 70px;width: 50px;margin-top: 5px;}
+}
+
+
+/*HEADER MENU*/
+.containerMenu{
+    width: 100%;  
+    margin: 0 auto; 
+    position: absolute;
+    margin-top: 103px;
+}
+
+.menu{ 
+    position: fixed;
+    left: -100%;
+    height: 28vh;
+    line-height: 5vh;
+    width: 12rem;
+    background-color: rgb(245, 157, 35); 
+    padding-top: 3vh;
+    padding-left: 5vh;
+    animation: showMenu 400ms ease forwards;
+}
+
+@keyframes showMenu {
+    to{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .containerMenu{
+        margin-top: 83px;
+    }
+}
+
+/*MENU ICON*/
+.material-symbols-outlined {
+    font-weight: bold!important;
+    font-size: 28px !important;
+    background-color: rgb(245, 157, 35);
+}
+
+#menuBtn{
+    background-color: rgb(245, 157, 35);
+    cursor: pointer;
+}
+
+#closeBtn > span{
+    cursor: pointer;
 }

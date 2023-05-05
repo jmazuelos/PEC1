@@ -173,4 +173,49 @@ footer > section {
   }
 }
 
+.containerMenu {
+  width: 100%;
+  margin: 103px auto 0;
+  position: absolute;
+}
+
+.menu {
+  height: 28vh;
+  width: 12rem;
+  background-color: #f59d23;
+  padding-top: 3vh;
+  padding-left: 5vh;
+  line-height: 5vh;
+  animation: .4s forwards showMenu;
+  position: fixed;
+  left: -100%;
+}
+
+@keyframes showMenu {
+  to {
+    left: 0;
+  }
+}
+
+@media only screen and (width <= 400px) {
+  .containerMenu {
+    margin-top: 83px;
+  }
+}
+
+.material-symbols-outlined {
+  background-color: #f59d23;
+  font-size: 28px !important;
+  font-weight: bold !important;
+}
+
+#menuBtn {
+  cursor: pointer;
+  background-color: #f59d23;
+}
+
+#closeBtn > span {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.cfff48f7.css.map */
