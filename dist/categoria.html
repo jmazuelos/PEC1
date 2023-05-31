@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="icon" href="/favicon.c5ec8b79.ico">
     <title>Osuna | Categoría</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -18,37 +19,22 @@
 <body class="wrapperCategoria">
     <!---------------------- HEADER ----------------------------->
     <header class="headerStyle">
-        <div class="containerMenu">
-            <aside class="menu">
-                <div class="top">
-                    <div class="logoClose">
-                        <div class="close" id="closeBtn"><span class="material-symbols-outlined">close</span></div>
-                    </div>
-                </div>
-                <div class="sidebar">
-                    <a href="/index.html">
-                        <h3>Inicio</h3>
-                    </a>
-                    <a href="/categoria.html">
-                        <h3>Categoría</h3>
-                    </a>
-                    <a href="/presentacion.html">
-                        <h3>Presentación</h3>
-                    </a>
-                    <a href="/enlaces.html">
-                        <h3>Enlaces</h3>
-                    </a>
-                </div>
-            </aside>
-        </div>
+        <aside hidden="" id="menu" class="menu">
+            <a href="/index.html"><h3>Inicio</h3></a>
+            <a href="/categoria.html"><h3>Categoría</h3></a>
+            <a href="/presentacion.html"><h3>Presentación</h3></a>
+            <a href="/enlaces.html"><h3>Enlaces</h3></a>
+        </aside>
         <section id="navSection">
             <nav class="navStyle">
                 <ul class="navList">
                     <li class="navElem mt">
-                        <div class="top">
-                            <button id="menuBtn">
-                                <span class="material-symbols-outlined">menu</span>
-                            </button>
+                        <div class="hamburger" id="hamburger">
+                            <svg class="hamburgerMenu" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="top" x="20" y="29" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="middle" x="20" y="45.5745" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="bottom" x="20" y="62.1489" width="60" height="7.85106" fill="#000"></rect>
+                            </svg>
                         </div>
                     </li>
                     <li class="navElem mt"><a class="navLink" href="/categoria.html">Categoría</a></li>
@@ -83,7 +69,7 @@
                 <ul class="cardTitle">
                     <li id="necropolis">Necrópolis</li>
                 </ul>
-                <img src="/necropolis.6cdcbf25.jpg" alt="">
+                <img class="cardImage" src="/necropolisPrincipal.efd711de.jpg" alt="">
                 <ul class="cardDescription">
                     <li>La necrópolis de Urso es uno de los enclaves arqueológicos más importantes de la Hispania romana, donde Se conservan numerosas tumbas excavadas en la roca, vestigios de lo que debió ser una extensa ciudad mortuoria.</li>
                     <li><a href="/detalleNecropolis.html">+ sobre la Necrópolis</a></li>
@@ -93,7 +79,7 @@
                 <ul class="cardTitle">
                     <li id="canteras">Canteras de Osuna</li>
                 </ul>
-                <img src="/canteras.8e9e1fa0.jpg" alt="">
+                <img class="cardImage" src="/canteras.8e9e1fa0.jpg" alt="">
                 <ul class="cardDescription">
                     <li>Terrenos de la Antigua Urso de donde se extraía la piedra para las construcciones desde antes de la ocupación romana. Es conocida como “La Petra de Andalucía” por sus espectaculares relieves en piedra.</li>
                     <li><a href="/detalleCantera.html">+ sobre las Canteras de Osuna</a></li>
@@ -103,7 +89,7 @@
                 <ul class="cardTitle">
                     <li id="teatro">Teatro Romano</li>
                 </ul>
-                <img src="/teatro.77d25b8d.jpg" alt="">
+                <img class="cardImage" src="/teatro.77d25b8d.jpg" alt="">
                 <ul class="cardDescription">
                     <li>Es una construcción típica del Imperio Romano, generalizada por todas las provincias del imperio, y que tenía la finalidad de servir para la interpretación de actos teatrales del periodo clásico.</li>
                     <li><a href="">+ sobre el Teatro Romano</a></li>
@@ -113,7 +99,7 @@
                 <ul class="cardTitle">
                     <li id="colegiata">La Colegiata</li>
                 </ul>
-                <img src="/colegiata.afffd9dd.jpg" alt="">
+                <img class="cardImage" src="/colegiata.afffd9dd.jpg" alt="">
                 <ul class="cardDescription">
                     <li>Es un templo católico cuya construcción se inició alrededor de 1531 y constituye un ejemplo destacado de arquitectura renacentista en España y un símbolo religioso y cultural de la población de Osuna.</li>
                     <li><a href="/detalleColegiata.html">+ sobre la Colegiata</a></li>
@@ -123,7 +109,7 @@
                 <ul class="cardTitle">
                     <li id="universidad">Universidad de Osuna</li>
                 </ul>
-                <img src="/universidad.593b9a5d.jpg" alt="">
+                <img class="cardImage" src="/universidad.593b9a5d.jpg" alt="">
                 <ul class="cardDescription">
                     <li>Fue fundada en 1548 gracias a una bula promulgada por el Papa Paulo III. En ella tuvieron sede quince cátedras mayores en la Universidad y ocho menores en el Colegio. Actualmente este centro cuenta con los Grados en Enfermería, Fisioterapia, Educación Primaria, etc.</li>
                     <li><a href="">+ sobre la Universidad de Osuna</a></li>
@@ -133,7 +119,7 @@
                 <ul class="cardTitle">
                     <li id="palacio">Palacio del Marqués de la Gomera</li>
                 </ul>
-                <img src="/palacio.4ba4f92b.jpg" alt="">
+                <img class="cardImage" src="/palacio.4ba4f92b.jpg" alt="">
                 <ul class="cardDescription">
                     <li>Fechable en torno a 1770 es un claro ejemplo del barroco civil andaluz con influencias de la arquitectura colonial. Actualmente alberga el Hotel-Restaurante Marqués de la Gomera.</li>
                     <li><a href="">+ sobre el Palacio del Marqués de la Gomera</a></li>
@@ -144,7 +130,7 @@
     <!---------------------- FOOTER ----------------------------->
     <footer class="footerStyle">
         <section id="logoFooterSection">
-            <img src="/logoOsuna.d8a163dc.jpg">
+            <img src="/logoOsuna.d8a163dc.jpg" class="clip-circle">
         </section>
         <section>
             <form action="">

@@ -94,14 +94,15 @@ main a:hover {color: rgb(93, 95, 121); }
     font-size: 20px;
 }
 
+.cardImage{
+    border-radius: 5px;
+    max-width: 100%;
+}
+
 .cardDescription{
     line-height: 25px;
     margin-top: 30px;
     text-align: justify;
-}
-
-img{
-    max-width: 100%;
 }
 
 .ml{

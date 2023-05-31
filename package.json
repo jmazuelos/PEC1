@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "source": "src/index.html", 
+  "source": "src/index.html",
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
@@ -19,6 +19,7 @@
     "lodash": "^4.17.21",
     "npm-run-all": "^4.1.5",
     "parcel": "latest",
-    "rimraf": "^5.0.0"
+    "rimraf": "^5.0.0",
+    "sharp": "^0.31.3"
   }
 }

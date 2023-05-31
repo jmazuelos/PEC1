@@ -18,37 +18,22 @@
 <body class="wrapperDetalle">
     <!---------------------- HEADER ----------------------------->
     <header class="headerStyle">
-        <div class="containerMenu">
-            <aside class="menu">
-                <div class="top">
-                    <div class="logoClose">
-                        <div class="close" id="closeBtn"><span class="material-symbols-outlined">close</span></div>
-                    </div>
-                </div>
-                <div class="sidebar">
-                    <a href="/index.html">
-                        <h3>Inicio</h3>
-                    </a>
-                    <a href="/categoria.html">
-                        <h3>Categoría</h3>
-                    </a>
-                    <a href="/presentacion.html">
-                        <h3>Presentación</h3>
-                    </a>
-                    <a href="/enlaces.html">
-                        <h3>Enlaces</h3>
-                    </a>
-                </div>
-            </aside>
-        </div>
+        <aside hidden="" id="menu" class="menu">
+            <a href="/index.html"><h3>Inicio</h3></a>
+            <a href="/categoria.html"><h3>Categoría</h3></a>
+            <a href="/presentacion.html"><h3>Presentación</h3></a>
+            <a href="/enlaces.html"><h3>Enlaces</h3></a>
+        </aside>
         <section id="navSection">
             <nav class="navStyle">
                 <ul class="navList">
                     <li class="navElem mt">
-                        <div class="top">
-                            <button id="menuBtn">
-                                <span class="material-symbols-outlined">menu</span>
-                            </button>
+                        <div class="hamburger" id="hamburger">
+                            <svg viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="top" x="20" y="29" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="middle" x="20" y="45.5745" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="bottom" x="20" y="62.1489" width="60" height="7.85106" fill="#000"></rect>
+                            </svg>
                         </div>
                     </li>
                     <li class="navElem mt"><a class="navLink" href="/categoria.html">Categoría</a></li>
@@ -100,7 +85,7 @@
     <!---------------------- FOOTER ----------------------------->
     <footer class="footerStyle">
         <section id="logoFooterSection">
-            <img src="/logoOsuna.d8a163dc.jpg">
+            <img src="/logoOsuna.d8a163dc.jpg" class="clip-circle">
         </section>
         <section>
             <form action="">

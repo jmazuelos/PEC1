@@ -63,7 +63,7 @@ footer a:visited {color: white}
 footer a:hover {color: rgb(245, 157, 35); } 
 
 #logoFooterSection img{
-    width: 120px;
+    width: 150px;
     margin-top: 20px;
 }
 
@@ -109,6 +109,10 @@ footer>section{
 .navFooterElem{
     display: inline-block;
     margin-left: 30px;
+}
+
+.clip-circle{
+    clip-path: circle(60px at center);
 }
 /*END - FOOTER*/
 
@@ -159,23 +163,53 @@ footer>section{
 
 
 /*HEADER MENU*/
-.containerMenu{
-    width: 100%;  
-    margin: 0 auto; 
-    position: absolute;
-    margin-top: 103px;
-}
-
 .menu{ 
+    margin-top: 102px;
+    width: fit-content;
+    z-index: 3;
+    background-color: #f59d23;
+    border-radius: 8px;
+    padding: 3vh;
+    line-height: 5vh;
+    animation: .4s forwards showMenu;
     position: fixed;
     left: -100%;
-    height: 28vh;
-    line-height: 5vh;
-    width: 12rem;
-    background-color: rgb(245, 157, 35); 
-    padding-top: 3vh;
-    padding-left: 5vh;
-    animation: showMenu 400ms ease forwards;
+    z-index: 3;
+    border-radius: 8px;
+}
+
+.hamburger{
+    margin-top: calc(-2.5vw + 5px);
+}
+  
+svg.hamburgerMenu {
+    width: calc(4vw + 15px);
+    height: calc(4vw + 15px);
+
+    cursor: pointer;
+    
+    rect {
+      transition: all .3s ease-in-out;
+    }
+    
+    &:hover{
+      .middle {
+        x: 0;
+        opacity: 0;
+      }
+      .top {
+        transform: rotate(45deg);
+        transform-origin: center top;
+        x: 50px;
+        y: 35px;
+      }
+      .bottom {
+        transform: rotate(-45deg);
+        transform-origin: center top;
+        x: -20px;
+        y: 25px;
+      }
+    }
 }
 
 @keyframes showMenu {
@@ -185,23 +219,7 @@ footer>section{
 }
 
 @media only screen and (max-width: 400px){
-    .containerMenu{
+    .menu{
         margin-top: 83px;
     }
-}
-
-/*MENU ICON*/
-.material-symbols-outlined {
-    font-weight: bold!important;
-    font-size: 28px !important;
-    background-color: rgb(245, 157, 35);
-}
-
-#menuBtn{
-    background-color: rgb(245, 157, 35);
-    cursor: pointer;
-}
-
-#closeBtn > span{
-    cursor: pointer;
 }

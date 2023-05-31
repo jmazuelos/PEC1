@@ -85,21 +85,7 @@ figcaption{
 
 img{
     max-width: 100%;
-}
-
-#categorieButton{
-    margin: 30px 0;
-}
-
-.categorieButtonStyle{
-    color: black;
-    background-color: #f59d23;
     border-radius: 5px;
-    font-family: inherit;
-    padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    border: black 0.5px solid;
 }
 
 /*END - MAIN*/
@@ -114,3 +100,25 @@ img{
         width: 90%; 
     }
 }
+
+
+#animation{
+    cursor: pointer;
+    margin-top: 20px;
+    stroke-dasharray: 200;
+    animation: /*name*/ fillSvg /*duration*/ 2s /*timing-function*/ linear /*delay*/ 0s /*iteration*/ infinite /*direction*/ alternate;
+}
+
+@keyframes fillSvg {
+    0%{
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+    }
+}
+
+

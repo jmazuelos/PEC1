@@ -54,6 +54,13 @@ main a:hover {color: rgb(93, 95, 121); }
     text-align: justify;
 }
 
+#articleContent p:first-of-type::first-letter {
+    font-size: 40px;
+    color:rgb(93, 95, 121);
+    text-align: justify;
+    font-weight: bold;
+}
+
 figure{
     color: rgb(93, 95, 121);
 }
@@ -64,6 +71,20 @@ iframe{
 
 figcaption{
     font-size: small;
+}
+
+.firstImage {
+	float: left;
+	max-width: 60%;
+	shape-outside: polygon(0px 368px, 0.16% -0.16%, 81.30% 0.06%, 96.34% 37.72%, 96.79% 100.35%);
+	clip-path: polygon(-1px 368px, .16% -.16%, 83.65% .06%, 96.34% 37.72%, 96.78% 100.06%);
+	shape-margin: 1.5%;
+}
+
+.mainImage{
+    margin-bottom: 20px;
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 /*END - MAIN*/

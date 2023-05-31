@@ -18,37 +18,22 @@
 <body class="wrapperDetalle">
     <!---------------------- HEADER ----------------------------->
     <header class="headerStyle">
-        <div class="containerMenu">
-            <aside class="menu">
-                <div class="top">
-                    <div class="logoClose">
-                        <div class="close" id="closeBtn"><span class="material-symbols-outlined">close</span></div>
-                    </div>
-                </div>
-                <div class="sidebar">
-                    <a href="/index.html">
-                        <h3>Inicio</h3>
-                    </a>
-                    <a href="/categoria.html">
-                        <h3>Categoría</h3>
-                    </a>
-                    <a href="/presentacion.html">
-                        <h3>Presentación</h3>
-                    </a>
-                    <a href="/enlaces.html">
-                        <h3>Enlaces</h3>
-                    </a>
-                </div>
-            </aside>
-        </div>
+        <aside hidden="" id="menu" class="menu">
+            <a href="/index.html"><h3>Inicio</h3></a>
+            <a href="/categoria.html"><h3>Categoría</h3></a>
+            <a href="/presentacion.html"><h3>Presentación</h3></a>
+            <a href="/enlaces.html"><h3>Enlaces</h3></a>
+        </aside>
         <section id="navSection">
             <nav class="navStyle">
                 <ul class="navList">
                     <li class="navElem mt">
-                        <div class="top">
-                            <button id="menuBtn">
-                                <span class="material-symbols-outlined">menu</span>
-                            </button>
+                        <div class="hamburger" id="hamburger">
+                            <svg viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="top" x="20" y="29" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="middle" x="20" y="45.5745" width="60" height="7.85106" fill="#000"></rect>
+                                <rect class="bottom" x="20" y="62.1489" width="60" height="7.85106" fill="#000"></rect>
+                            </svg>
                         </div>
                     </li>
                     <li class="navElem mt"><a class="navLink" href="/categoria.html">Categoría</a></li>
@@ -66,9 +51,22 @@
                 <h1 class="title">Necrópolis</h1>
             </section>
             <section id="articleContent">
+                <picture>
+                    <source class="firstImage" media="(max-width: 599px)" srcset="/necropolis-600w.9e8ad8f8.jpg">
+                    <source class="firstImage" media="(min-width: 600px)" srcset="/necropolis-800w.9c8dd9ff.jpg">
+                    <img class="firstImage" src="/necropolis-800w.9c8dd9ff.jpg">
+                </picture>
+                
                 <p>La necrópolis de Urso, más conocida como las Cuevas de Osuna, es uno de los enclaves arqueológicos más importantes de la Hispania romana. Se encuentra situada hacia el este del actual núcleo urbano de Osuna. En todo el enclave se conservan numerosas tumbas excavadas en la roca, vestigios de lo que debió ser una extensa ciudad mortuoria. A pesar de ser conocida desde siempre por los pobladores de Osuna, a principios del siglo XX fueron sometidas a una excavación que sacó a la luz los enterramientos de lo que fue la necrópolis de la vieja Urso.</p>
                 <p>Algunas cuevas aparecen divididas en departamentos con techos abovedados, excavados en la roca, ofreciendo en sus muros pinturas de aves, ejemplos de frescos con motivos puramente paganos, según algunos investigadores, o detalles de lo que podrían ser pinturas con referencias cristianas, según otro grupo de expertos. En cualquier caso, la mayoría de los estudiosos opinan que los restos encontrados corresponden a la época paleocristiana.</p>
                 
+                <picture>
+                    <source class="mainImage" media="(max-width: 399px)" srcset="/necropolisPrincipal-400w.e1607e6f.jpg">
+                    <source class="mainImage" media="(max-width: 599px)" srcset="/necropolisPrincipal-600w.304e23d7.jpg">
+                    <source class="mainImage" media="(min-width: 600px)" srcset="/necropolisPrincipal-800w.df66948b.jpg">
+                    <img class="mainImage" src="/necropolisPrincipal-800w.df66948b.jpg">
+                </picture>
+
                 <p>Las Cuevas de Osuna son conocidas desde hace varios siglos, circunstancia que ha provocado un estado continuo de saqueo y destrucción de dicho enclave, pero a la vez ha servido para generar una tradición historiográfica que ha permitido que haya quedado constancia por escrito de muchos elementos que en la actualidad no se conservan. Las cuevas se encuentran al aire libre y se pueden visitar todos los días de forma gratuita. Muchos de sus restos se encuentran en el Museo Arqueológico local. Aunque algunos de los expuestos en el museo son réplicas, los originales se encuentran en el Museo Nacional de Madrid. La ciudad romana de Urso está catalogada como Bien de Interés Cultural.</p>
                 <figure>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzARTSQvRno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
@@ -81,13 +79,13 @@
                 <section id="galeria">
                     <div class="lugar">
                         <figure class="foto">
-                            <img src="/colegiata.afffd9dd.jpg" alt="">
+                            <img src="/colegiata.91a8322c.webp" alt="">
                             <a href="/detalleColegiata.html"><figcaption>La Colegiata</figcaption></a>
                         </figure>
                     </div>
                     <div class="lugar">
                         <figure class="foto">
-                            <img src="/canteras.8e9e1fa0.jpg" alt="">
+                            <img src="/canteras.e7a61635.avif" alt="">
                             <a href="/detalleCantera.html"><figcaption>Canteras de Osuna</figcaption></a>
                         </figure>
                     </div>
@@ -97,7 +95,7 @@
     <!---------------------- FOOTER ----------------------------->
     <footer class="footerStyle">
         <section id="logoFooterSection">
-            <img src="/logoOsuna.d8a163dc.jpg">
+            <img src="/logoOsuna.d8a163dc.jpg" class="clip-circle">
         </section>
         <section>
             <form action="">

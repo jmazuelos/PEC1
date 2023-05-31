@@ -44,7 +44,7 @@ body::before{
 
 /*START - MAIN*/
 main{
-  margin: 100px 0;
+  margin: 10% 0;
   font-weight: 600;
   font-size: 40px;
   line-height: 50px;
@@ -63,11 +63,89 @@ main{
   margin-bottom: 50px;
 }
 
+.collage {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  margin: 8% 4%;
+  max-width: 1200px;
+  max-height: 1200px;
+  
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 12%;
+  justify-items: center;
+  align-items: center;
+}
+
+.collageElem {
+  cursor: pointer;
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  clip-path: circle(50%);
+  transform: scale(100%);
+  transition: all 0.6s ease .1s; 
+
+  
+  &:nth-child(5n + 1) {
+    grid-column: 2 / span 2;
+  }
+  
+  &:hover {
+    z-index: 2;
+    transform: scale(150%);
+    clip-path: circle(75%);
+    border-radius: 5px;
+    transition: all 1.2s ease .4s;
+  }
+}
+
 @media only screen and (max-width: 450px){
   /*START - MAIN*/
   main{
     margin: 50px 0;
     font-size: 9vw;
+  }
+
+  .collage {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    margin: 12% 7%;
+    max-width: 1200px;
+    max-height: 1200px;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20%;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .collageElem {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: circle(50%);
+    transform: scale(130%);
+    transition: all 1.2s ease .4s; 
+  
+    
+    &:nth-child(5n + 1) {
+      grid-column: 2 / span 2;
+    }
+    
+    &:hover {
+      z-index: 2;
+      transform: scale(200%);
+      clip-path: circle(75%);
+      border-radius: 5px;
+    }
   }
 }
 
