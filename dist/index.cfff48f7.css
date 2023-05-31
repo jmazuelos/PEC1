@@ -206,19 +206,19 @@ svg.hamburgerMenu rect {
   transition: all .3s ease-in-out;
 }
 
-svg.hamburgerMenu:hover .middle {
+.middle {
   x: 0;
   opacity: 0;
 }
 
-svg.hamburgerMenu:hover .top {
+.top {
   transform-origin: top;
   x: 50px;
   y: 35px;
   transform: rotate(45deg);
 }
 
-svg.hamburgerMenu:hover .bottom {
+.bottom {
   transform-origin: top;
   x: -20px;
   y: 25px;

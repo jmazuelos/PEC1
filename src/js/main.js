@@ -1,6 +1,10 @@
 document.getElementById("hamburger").addEventListener("click",function(){
-    if($("#menu").is(":visible"))
+    document.getElementById("top").classList.toggle("top");
+    document.getElementById("middle").classList.toggle("middle");
+    document.getElementById("bottom").classList.toggle("bottom");
+    if($("#menu").is(":visible")){
         $("#menu").hide();
-    else
+    }else{
         $("#menu").show();
+    }
 });

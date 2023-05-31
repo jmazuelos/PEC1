@@ -187,30 +187,29 @@ svg.hamburgerMenu {
     height: calc(4vw + 15px);
 
     cursor: pointer;
-    
-    rect {
+   
+     rect {
       transition: all .3s ease-in-out;
     }
-    
-    &:hover{
-      .middle {
-        x: 0;
-        opacity: 0;
-      }
-      .top {
-        transform: rotate(45deg);
-        transform-origin: center top;
-        x: 50px;
-        y: 35px;
-      }
-      .bottom {
-        transform: rotate(-45deg);
-        transform-origin: center top;
-        x: -20px;
-        y: 25px;
-      }
-    }
 }
+    
+.middle {
+    x: 0;
+    opacity: 0;
+}
+.top {
+    transform: rotate(45deg);
+    transform-origin: center top;
+    x: 50px;
+    y: 35px;
+}
+.bottom {
+    transform: rotate(-45deg);
+    transform-origin: center top;
+    x: -20px;
+    y: 25px;
+}
+
 
 @keyframes showMenu {
     to{
