@@ -174,7 +174,6 @@ footer>section{
     animation: .4s forwards showMenu;
     position: fixed;
     left: -100%;
-    z-index: 3;
     border-radius: 8px;
 }
 
@@ -209,7 +208,6 @@ svg.hamburgerMenu {
     x: -20px;
     y: 25px;
 }
-
 
 @keyframes showMenu {
     to{

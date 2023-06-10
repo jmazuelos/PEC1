@@ -92,6 +92,7 @@ img {
 
 #animation {
   cursor: pointer;
+  max-width: 100%;
   stroke-dasharray: 200;
   margin-top: 20px;
   animation: 2s linear infinite alternate fillSvg;
