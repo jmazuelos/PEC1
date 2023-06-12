@@ -30,8 +30,16 @@ li{
 header a{color: black;}
 header a:visited {color: black;}
 header a:hover {color: white} 
-  
-#logo{height: 140px;width: 100px;margin-top: 5px;}
+
+.desktopLogo{
+    margin-top: 5px;
+    max-width: 140px;
+    width: 95%;
+}
+
+.mobileLogo{
+    display: none;
+}
   
 .navElem{
     margin-left: 1.5vw;
@@ -148,6 +156,13 @@ footer>section{
     }
 
     #logo{height: 90px;width: 65px;margin-top: 5px;}
+    .desktopLogo{
+        display: none;
+    }
+
+    .mobileLogo{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 400px){
