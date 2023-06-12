@@ -44,7 +44,7 @@ body::before{
 
 /*START - MAIN*/
 main{
-  margin: 10% 0;
+  margin: 80px 0 120px 0;
   font-weight: 600;
   font-size: 40px;
   line-height: 50px;
@@ -103,10 +103,15 @@ main{
   }
 }
 
+@media only screen and (max-width: 850px){
+  main{
+    margin: 10vw 0;
+  }
+}
+
 @media only screen and (max-width: 450px){
   /*START - MAIN*/
   main{
-    margin: 50px 0;
     font-size: 9vw;
   }
 

@@ -31,14 +31,7 @@ header a{color: black;}
 header a:visited {color: black;}
 header a:hover {color: white} 
   
-#logo{height: 140px;width: 100px;margin-top: 5px;}
-.desktopLogo{
-    margin-top: 5px;
-}
-
-.mobileLogo{
-    display: none;
-}
+#logo{margin-top: 5px;}
   
 .navElem{
     margin-left: 1.5vw;
@@ -130,7 +123,11 @@ footer>section{
     .headerStyle {
         font-weight: 700;
         background-color: rgb(245, 157, 35);
-        /* height: 11.5vw; */
+        height: 11.5vw;
+    }
+
+    .mt{
+        margin-top: 4.5vw;
     }
 
     .navElem{
@@ -138,7 +135,15 @@ footer>section{
         font-size: 2.8vw;
     }
 
-    #logo{height: 16vw;width: 11vw;margin-top: 5px;}
+    #logo{
+        height: 16vw !important;
+        width: 11vw !important;
+    }
+
+    .menu{
+        margin-top: calc(11.5vw + 2px) !important;
+        font-size: calc(0.8vw + 10px);
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -146,7 +151,6 @@ footer>section{
     .headerStyle {
         font-weight: 700;
         background-color: rgb(245, 157, 35);
-        height: 100px;
     }
 
     .navElem{
@@ -154,25 +158,25 @@ footer>section{
         font-size: 15px;
     }
 
-    #logo{height: 90px;width: 65px;margin-top: 5px;}
-    .desktopLogo{
-        display: none;
-    }
-
-    .mobileLogo{
-        display: block;
-    }
+    /* #logo{
+        height: 90px !important;
+        width: 65px !important;
+    } */
 }
 
 @media only screen and (max-width: 400px){
-    .headerStyle {
+    /* .headerStyle {
         height: 80px;
     }
     .navElem{
         margin-left: 1.5vw;
         font-size: 13px;
     }
-    #logo{height: 70px;width: 50px;margin-top: 5px;}
+    #logo{height: 70px;width: 50px;margin-top: 5px;} */
+
+    .menu{
+        margin-top: 83px;
+    }
 }
 
 
@@ -183,7 +187,7 @@ footer>section{
     z-index: 3;
     background-color: #f59d23;
     border-radius: 8px;
-    padding: 3vh;
+    padding: 2vw;
     line-height: 5vh;
     animation: .4s forwards showMenu;
     position: fixed;
@@ -226,11 +230,5 @@ svg.hamburgerMenu {
 @keyframes showMenu {
     to{
         left: 0;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .menu{
-        margin-top: 83px;
     }
 }
