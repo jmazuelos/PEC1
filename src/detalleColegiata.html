@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de detalle que muestra la historia y el patrimonio de la Colegiata de Osuna con mayor detalle">
 
     <script async src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script defer src="/src/js/main.js"></script>
@@ -13,12 +14,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="font" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"></noscript>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/detalle.scss">
     <link rel="stylesheet" href="css/base.scss">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body class="wrapperDetalle">
     <!---------------------- HEADER ----------------------------->
@@ -42,7 +42,12 @@
                         </div>
                     </li>
                     <li class="navElem mt"><a class="navLink" href="categoria.html">Categoría</a></li>
-                    <li><a href="index.html"><img id="logo" src="/src/img/escudo.avif" alt=""></a></li>
+                    <li><a href="index.html">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="/src/img/escudo-140w.avif">
+                            <img id="logo" height="140" width="90" src="/src/img/escudo.avif" alt="Escudo">
+                        </picture>
+                    </a></li>
                     <li class="navElem mt"><a class="navLink" href="presentacion.html">Presentación</a></li>
                     <li class="navElem mt"><a class="navLink" href="enlaces.html">Enlaces</a></li>
                 </ul>
@@ -74,13 +79,13 @@
                 <section id="galeria">
                     <div class="lugar">
                         <figure class="foto">
-                            <img src="/src/img/canteras.jpg" alt="">
+                            <img src="/src/img/canteras.jpg" alt="Las Canteras">
                             <a href="detalleCantera.html"><figcaption>Canteras de Osuna</figcaption></a>
                         </figure>
                     </div>
                     <div class="lugar">
                         <figure class="foto">
-                            <img src="/src/img/necropolis.jpg" alt="">
+                            <img src="/src/img/necropolis.jpg" alt="Necrópolis">
                             <a href="detalleNecropolis.html"><figcaption>Necrópolis</figcaption></a>
                         </figure>
                     </div>
@@ -90,28 +95,28 @@
     <!---------------------- FOOTER ----------------------------->
     <footer class="footerStyle">
         <section id="logoFooterSection">
-            <img src="/src/img/logoOsuna.jpg" loading="lazy" class="clip-circle">
+            <img src="/src/img/logoOsuna-170w.jpg" loading="lazy" class="clip-circle" height="125" width="150" alt="Logo de Osuna">
         </section>
         <section>
             <form action="">
                 <div>Recibe información semanal de las excursiones culturales</div>
                 <div id="inputEmail">
-                    <input class="inputEmailStyle" type="text" name="inputEmail" value="" placeholder="Escribe tu e-mail">
+                    <input class="inputEmailStyle" type="text" name="inputEmail" value="" placeholder="Escriba su e-mail" aria-labelledby="inputEmail">
                 </div>
                 <div id="acceptPolicy">
-                    <input type="checkbox" name="acceptPolicy" value="accept"><p><a href="">&nbsp;Acepto la política de protección de datos</a></p>
+                    <input type="checkbox" name="acceptPolicy" value="accept" aria-label="checkboxPolicy"><p id="acceptPolicyText">Acepto la <a href="#" aria-label="Lea más sobre la política de datos "></a>política de protección de datos</a></p>
                 </div>
                 <div id="submitButton">
-                    <input class="submitButtonStyle" type="button" name="submitButton" value="SUSCRÍBEME">
+                    <input class="submitButtonStyle" type="button" name="submitButton" value="SUSCRÍBEME" aria-labelledby="submitButton">
                 </div>
             </form>
         </section>
         <section id="navFooterSection">
             <nav class="navFooterStyle">
                 <ul class="navFooterList">
-                    <li class="navFooterElem"><a class="navFooterLink" href="">Política de privacidad</a></li>
-                    <li class="navFooterElem"><a class="navFooterLink" href="">Aviso legal</a></li>
-                    <li class="navFooterElem"><a class="navFooterLink" href="">Contacto</a></li>
+                    <li class="navFooterElem"><a class="navFooterLink" href="#">Política de privacidad</a></li>
+                    <li class="navFooterElem"><a class="navFooterLink" href="#">Aviso legal</a></li>
+                    <li class="navFooterElem"><a class="navFooterLink" href="#">Contacto</a></li>
                 </ul>
             </nav>
         </section>
