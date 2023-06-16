@@ -1,4 +1,4 @@
-import './scss/lazyframe.scss'
+import '../css/lazyframe.scss'
 
 const Lazyframe = () => {
 
