@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "lazyframe": "^2.2.7",
+    "lite-youtube-embed": "^0.2.0",
     "puppeteer": "^20.7.1"
   }
 }
