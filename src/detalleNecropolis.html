@@ -12,6 +12,7 @@
     <link rel="icon" href="/src/img/favicon.ico">
     <title>Osuna | Necrópolis</title>
 
+    <link rel="stylesheet" type="text/css" href="dist/lazyframe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="font" onload="this.onload=null;this.rel='stylesheet'">
@@ -79,7 +80,8 @@
 
                 <p>Las Cuevas de Osuna son conocidas desde hace varios siglos, circunstancia que ha provocado un estado continuo de saqueo y destrucción de dicho enclave, pero a la vez ha servido para generar una tradición historiográfica que ha permitido que haya quedado constancia por escrito de muchos elementos que en la actualidad no se conservan. Las cuevas se encuentran al aire libre y se pueden visitar todos los días de forma gratuita. Muchos de sus restos se encuentran en el Museo Arqueológico local. Aunque algunos de los expuestos en el museo son réplicas, los originales se encuentran en el Museo Nacional de Madrid. La ciudad romana de Urso está catalogada como Bien de Interés Cultural.</p>
                 <figure>
-                    <iframe class="lazyframe" loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/ZzARTSQvRno" data-vendor="youtube" data-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <iframe class="lazyframe" loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/ZzARTSQvRno" data-vendor="youtube" data-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="lazyframe" data-src="https://www.youtube.com/embed/ZzARTSQvRno" data-vendor="youtube" data-title="Las cuevas de Osuna. Historia de una necrópolis de la Antigüedad." data-thumbnail="http://i3.ytimg.com/vi/ZzARTSQvRno/hqdefault.jpg"></div>
                     <figcaption>Historia de la Necrópolis de Osuna</figcaption>
                 </figure>               
             </section>
@@ -136,6 +138,7 @@
         </section>
     </footer>
 
-    <script>lazyframe('.lazyframe')</script>
+    <script type="text/javascript" src="dist/lazyframe.min.js"></script>
+    <!-- <script>lazyframe('.lazyframe')</script> -->
 </body>
 </html>
