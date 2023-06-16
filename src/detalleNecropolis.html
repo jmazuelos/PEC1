@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de detalle que muestra la historia y el patrimonio de la Necrópolis de Osuna con mayor detalle">
 
+    <script src="dist/lazyframe.min.js"></script>
     <script async src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script defer src="/src/js/main.js"></script>
 
@@ -79,7 +80,7 @@
 
                 <p>Las Cuevas de Osuna son conocidas desde hace varios siglos, circunstancia que ha provocado un estado continuo de saqueo y destrucción de dicho enclave, pero a la vez ha servido para generar una tradición historiográfica que ha permitido que haya quedado constancia por escrito de muchos elementos que en la actualidad no se conservan. Las cuevas se encuentran al aire libre y se pueden visitar todos los días de forma gratuita. Muchos de sus restos se encuentran en el Museo Arqueológico local. Aunque algunos de los expuestos en el museo son réplicas, los originales se encuentran en el Museo Nacional de Madrid. La ciudad romana de Urso está catalogada como Bien de Interés Cultural.</p>
                 <figure>
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ZzARTSQvRno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="lazyframe" loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/ZzARTSQvRno" data-vendor="youtube" data-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <figcaption>Historia de la Necrópolis de Osuna</figcaption>
                 </figure>               
             </section>
@@ -135,5 +136,7 @@
             <p>Actividad realizada por José Mazuelos Arregui</p> 
         </section>
     </footer>
+
+    <script>lazyframe('.lazyframe')</script>
 </body>
 </html>
