@@ -1,7 +1,7 @@
 document.getElementById("hamburger").addEventListener("click",function(){
-    document.getElementById("top").classList.toggle("top");
-    document.getElementById("middle").classList.toggle("middle");
-    document.getElementById("bottom").classList.toggle("bottom");
+    document.getElementsByTagName("rect")[0].classList.toggle("top");
+    document.getElementsByTagName("rect")[1].classList.toggle("middle");
+    document.getElementsByTagName("rect")[2].classList.toggle("bottom");
     if($("#menu").is(":visible")){
         $("#menu").hide();
     }else{
